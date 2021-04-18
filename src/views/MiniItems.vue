@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/15/2021-->
+<!--Vanessa Gutierrez 04/18/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -6,6 +6,6 @@
     >
       Miniature Items
     </h1>
-    <Items />
+    <Products />
   </div>
 </template>
