@@ -1,7 +1,7 @@
 <!--Vanessa Gutierrez 04/15/2021-->
 <template>
   <div
-    class="absolute left-0 right-0 bottom-2 text-black text-xs text-center pb-2"
+    class="absolute left-0 right-0 bottom-2 text-black text-xs text-center font-serif pb-2"
   >
     <div>
       Icons made by
