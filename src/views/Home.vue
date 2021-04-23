@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/15/2021-->
+<!--Vanessa Gutierrez 04/22/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -10,30 +10,30 @@
       Welcome to our page,
       {{ user?.displayName || 'we are beyond excited to see you here!' }}
     </p>
-    <div class="w-full mx-auto mt-5 p-8 text-center">
-      <div class="float-left w-1/2 text-center">
+    <div class="p-6 text-center mx-auto container">
+      <div class="float-left w-1/2">
         <img
-          class="rounded-lg p-2 shadow-md opacity-95 mx-auto"
-          src="/src/assets/pexels-olya-kobruseva-5417638.jpg"
+          class="rounded-lg p-2 shadow-xl opacity-95 ml-auto mr-auto mt-1"
+          src="/src/assets/pexels-nataliya-vaitkevich-6214386.jpg"
           alt="Mini Online Shopping Cart"
-          width="500"
-          height="500"
+          width="250"
+          height="250"
         />
       </div>
-      <div class="float-right w-1/2 mt-14 pr-36 text-center">
-        <p
-          class="font-serif sm:text-sm md:text-sm lg:text-base text-fuchsia-900"
-        >
+      <div class="float-right w-1/2 mt-10 sm:break-normal ml-auto mr-auto">
+        <p class="font-serif text-fuchsia-900">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
           ducimus eaque eligendi eum dolore cum unde blanditiis nisi voluptatum
           facilis expedita, quia consectetur, dignissimos nemo magnam et quaerat
           natus accusamus.
         </p>
-        <button
-          class="btn bg-indigo-600 hover:bg-pink-500 btn-sm rounded-btn mt-10"
-        >
-          View Products
-        </button>
+        <router-link to="/miniitems">
+          <button
+            class="btn bg-fuchsia-900 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4"
+          >
+            View Products
+          </button>
+        </router-link>
       </div>
     </div>
   </div>
