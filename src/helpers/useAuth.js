@@ -40,14 +40,3 @@ export const database = () => {
 
   return { products }
 }
-
-//const cart = text = {
-//if (!isAuthenticated.value) return
-//const {photoURL, uid, displayName} = user.value
-//cartCollection.add({
-//userName: displayName,
-//userId: uid,
-//userPhotoURL: photoURL,
-
-//})
-//}

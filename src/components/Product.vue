@@ -1,7 +1,7 @@
-<!--Vanessa Gutierrez 04/22/2021-->
+<!--Vanessa Gutierrez 04/23/2021-->
 <template>
   <div>
-    <p class="text-center text-xs text-gray-300 mb-3">
+    <p class="text-center text-xs text-violet-50 mb-3">
       {{ product.name }}
     </p>
     <p>
@@ -12,17 +12,18 @@
     </p>
     <router-link to="/login" v-if="!isAuthenticated">
       <button
-        class="bg-pink-600 px-7 focus:outline-none hover:bg-fuchsia-900 rounded-md text-center mt-2 ml-auto mr-auto flex text-gray-200 text-xs"
+        class="bg-pink-600 px-7 focus:outline-none hover:bg-pink-700 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
       >
         Sign in to Add to Cart
       </button>
     </router-link>
-    <button
-      v-else
-      class="bg-fuchsia-700 px-7 focus:outline-none hover:bg-violet-500 rounded-md text-center mt-2 ml-auto mr-auto flex text-gray-200 text-xs"
-    >
-      Add to Cart
-    </button>
+    <div v-else>
+      <button
+        class="bg-fuchsia-800 px-7 focus:outline-none hover:bg-fuchsia-900 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
+      >
+        Add to Cart
+      </button>
+    </div>
   </div>
 </template>
 

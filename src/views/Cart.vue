@@ -1,6 +1,11 @@
-<!--Vanessa Gutierrez 03/30/2021-->
+<!--Vanessa Gutierrez 04/22/2021-->
 <template>
-  <div class="mt-6">
-    <h1 class="text-2xl font-bold pt-5 text-center">My Cart Page</h1>
+  <div class="mt-12">
+    <h1
+      class="bg-clip-text bg-gradient-to-r from-pink-600 to-indigo-800 font-extrabold tracking-wider text-4xl text-center text-transparent"
+    >
+      CART ITEMS
+    </h1>
+    <MyCart />
   </div>
 </template>

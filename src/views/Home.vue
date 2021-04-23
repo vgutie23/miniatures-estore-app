@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/22/2021-->
+<!--Vanessa Gutierrez 04/23/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -29,7 +29,7 @@
         </p>
         <router-link to="/miniitems">
           <button
-            class="btn bg-fuchsia-900 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4"
+            class="btn bg-fuchsia-800 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4"
           >
             View Products
           </button>
