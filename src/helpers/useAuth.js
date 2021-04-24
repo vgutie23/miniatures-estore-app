@@ -1,4 +1,4 @@
-//Vanessa Gutierrez 04/22/2021
+//Vanessa Gutierrez 04/24/2021
 import { ref, onUnmounted } from 'vue'
 import firebase from 'firebase/app'
 import { useAuth } from '@vueuse/firebase'
@@ -32,11 +32,26 @@ export const database = () => {
   const productsCollection = db.collection('products')
   const productQuery = productsCollection
 
-  const listProducts = productQuery.onSnapshot(p => {
+  const unsubscribe = productQuery.onSnapshot(p => {
     products.value = p.docs.map(doc => ({ id: doc.id, ...doc.data() }))
   })
 
-  onUnmounted(listProducts)
+  onUnmounted(unsubscribe)
 
-  return { products }
+  const cart = (product, user) => {
+    const { price, quantity, name, image } = product
+    const { displayName, uid } = user.value
+    const cartCollection = db.collection('cart')
+    cartCollection.add({
+      userName: displayName,
+      userId: uid,
+      productPrice: price,
+      productQuantity: quantity,
+      productName: name,
+      productImage: image,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    })
+  }
+
+  return { products, cart }
 }
