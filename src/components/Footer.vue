@@ -20,12 +20,12 @@
       >
     </div>
     <div>
-      Birthday photo created by
+      Background vector created by
       <a
-        href="https://www.freepik.com/photos/birthday"
+        href="https://www.freepik.com/vectors/background"
         class="hover:underline hover:text-pink-600"
       >
-        lookstudio - www.freepik.com</a
+        benzoix - www.freepik.com</a
       >
     </div>
   </div>
