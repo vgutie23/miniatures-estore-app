@@ -19,14 +19,5 @@
         >www.flaticon.com.</a
       >
     </div>
-    <div>
-      Background vector created by
-      <a
-        href="https://www.freepik.com/vectors/background"
-        class="hover:underline hover:text-pink-600"
-      >
-        benzoix - www.freepik.com</a
-      >
-    </div>
   </div>
 </template>
