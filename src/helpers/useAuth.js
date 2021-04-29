@@ -1,19 +1,19 @@
-//Vanessa Gutierrez 04/24/2021
+//Vanessa Gutierrez 04/29/2021
 import { ref, onUnmounted } from 'vue'
 import firebase from 'firebase/app'
-import { useAuth } from '@vueuse/firebase'
 import 'firebase/auth'
 import 'firebase/firestore'
 import { firebaseConfig } from '../config/firebase'
+import { useAuth } from '@vueuse/firebase'
 
 firebase.initializeApp(firebaseConfig)
 
 export const { auth, firestore } = firebase
 
+export const { isAuthenticated, user } = useAuth()
+
 const { GoogleAuthProvider } = auth
 export const db = firestore()
-
-export const { isAuthenticated, user } = useAuth()
 
 export const signIn = (email, password) =>
   auth().signInWithEmailAndPassword(email, password)
@@ -54,4 +54,19 @@ export const database = () => {
   }
 
   return { products, cart }
+}
+
+export const getItems = () => {
+  const cartItems = ref([])
+
+  const cartCollection = db.collection('cart')
+  const cartQuery = cartCollection.where('userId', '==', user.value.uid)
+
+  const unsubscribe = cartQuery.onSnapshot(c => {
+    cartItems.value = c.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+  })
+
+  onUnmounted(unsubscribe)
+
+  return cartItems
 }

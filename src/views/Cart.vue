@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/22/2021-->
+<!--Vanessa Gutierrez 04/29/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -6,6 +6,6 @@
     >
       CART ITEMS
     </h1>
-    <MyCart />
+    <CartItems />
   </div>
 </template>
