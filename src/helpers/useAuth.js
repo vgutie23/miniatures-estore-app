@@ -70,3 +70,12 @@ export const getItems = () => {
 
   return cartItems
 }
+
+export const currencyFormat = value => {
+  const formatNumber = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(value)
+
+  return formatNumber
+}

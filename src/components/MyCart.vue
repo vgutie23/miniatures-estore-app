@@ -1,8 +1,12 @@
 <!--Vanessa Gutierrez 04/29/2021-->
 <template>
   <ul class="flex flex-col divide-y divide-pink-500">
-    <li class="flex py-4">
+    <li class="flex py-1">
       <div class="flex w-full space-x-4 sm:space-x-5">
+        <img
+          class="object-cover w-24 h-24 rounded-lg"
+          :src="cartItem.productImage"
+        />
         <div class="w-full pb-3">
           <div class="flex justify-between w-full pb-4 space-x-6">
             <div class="space-y-4">
@@ -14,7 +18,7 @@
             </div>
             <div class="text-right">
               <p class="text-lg font-semibold mt-4 text-violet-50">
-                {{ cartItem.productPrice }}
+                {{ currencyFormat(cartItem.productPrice) }}
               </p>
             </div>
           </div>
@@ -33,6 +37,7 @@
 
 <script setup>
 import { defineProps } from 'vue'
+import { currencyFormat } from '../helpers/useAuth'
 
 const props = defineProps({
   cartItem: {

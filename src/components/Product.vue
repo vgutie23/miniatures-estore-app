@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/24/2021-->
+<!--Vanessa Gutierrez 04/29/2021-->
 <template>
   <div>
     <p class="text-center text-xs text-violet-50 mb-3">
@@ -7,8 +7,8 @@
     <p>
       <img :src="product.image" class="h-60 w-70 mx-auto" />
     </p>
-    <p class="text-center text-xs text-pink-300 font-light mt-3">
-      {{ product.price }}
+    <p class="text-center text-xs text-violet-100 mt-3">
+      {{ currencyFormat(product.price) }}
     </p>
     <router-link to="/login" v-if="!isAuthenticated">
       <button
@@ -32,6 +32,7 @@
 import { defineProps } from 'vue'
 import { isAuthenticated, database, user } from '../helpers/useAuth'
 import { defineEmit } from 'vue'
+import { currencyFormat } from '../helpers/useAuth'
 
 const props = defineProps({
   product: {
