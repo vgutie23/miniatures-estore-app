@@ -11,13 +11,24 @@
         class="p-3 w-full"
       />
       <div class="text-center ml-auto mr-auto">
-        <h3 class="text-xl font-bold text-violet-50">
+        <h3 class="text-lg font-bold text-violet-50">
           Subtotal:
-          <span class="font-bold text-violet-50">{{
+          <span class="text-violet-50">{{
             currencyFormat(addSubtotal(cartItems))
           }}</span>
         </h3>
-        <p class="text-xs text-coolGray-400">Before taxes and shipping</p>
+        <p class="text-xs text-coolGray-400 mb-1">Before taxes</p>
+      </div>
+      <div class="text-center ml-auto mr-auto">
+        <h3 class="text-lg font-bold text-violet-50">
+          Total:
+          <span class="font-bold text-violet-50">{{
+            currencyFormat(
+              addSubtotal(cartItems) * 0.0825 + addSubtotal(cartItems),
+            )
+          }}</span>
+        </h3>
+        <p class="text-xs text-coolGray-400">After taxes (+8.25%)</p>
       </div>
       <div class="flex justify-end space-x-3 pt-5">
         <router-link to="/miniitems">
