@@ -75,6 +75,15 @@ export const deleteCartItem = cartItem => {
   db.collection('cart').doc(cartItem.id).delete()
 }
 
+export const addSubtotal = cartItems => {
+  let subtotal = 0
+  cartItems.forEach(cartItem => {
+    subtotal += cartItem.productPrice * cartItem.productQuantity
+  })
+
+  return subtotal
+}
+
 export const currencyFormat = value => {
   const formatNumber = new Intl.NumberFormat('en-US', {
     style: 'currency',

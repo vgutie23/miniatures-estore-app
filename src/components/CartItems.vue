@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/29/2021-->
+<!--Vanessa Gutierrez 05/06/2021-->
 <template>
   <div>
     <div
@@ -13,7 +13,9 @@
       <div class="text-center ml-auto mr-auto">
         <h3 class="text-xl font-bold text-violet-50">
           Subtotal:
-          <span class="font-bold text-violet-50">$0.00</span>
+          <span class="font-bold text-violet-50">{{
+            currencyFormat(addSubtotal(cartItems))
+          }}</span>
         </h3>
         <p class="text-xs text-coolGray-400">Before taxes and shipping</p>
       </div>
@@ -36,6 +38,6 @@
 </template>
 
 <script setup>
-import { getItems } from '../helpers/useAuth'
+import { getItems, addSubtotal, currencyFormat } from '../helpers/useAuth'
 const cartItems = getItems()
 </script>
