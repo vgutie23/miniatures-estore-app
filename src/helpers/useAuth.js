@@ -1,4 +1,4 @@
-//Vanessa Gutierrez 04/29/2021
+//Vanessa Gutierrez 05/06/2021
 import { ref, onUnmounted } from 'vue'
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -69,6 +69,10 @@ export const getItems = () => {
   onUnmounted(unsubscribe)
 
   return cartItems
+}
+
+export const deleteCartItem = cartItem => {
+  db.collection('cart').doc(cartItem.id).delete()
 }
 
 export const currencyFormat = value => {

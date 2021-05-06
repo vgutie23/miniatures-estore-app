@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/29/2021-->
+<!--Vanessa Gutierrez 05/06/2021-->
 <template>
   <ul class="flex flex-col divide-y divide-pink-500">
     <li class="flex py-1">
@@ -23,7 +23,9 @@
             </div>
           </div>
           <div class="text-right text-sm">
+            <GetCartItems />
             <button
+              @click="deleteCartItem(cartItem)"
               class="p-1 bg-pink-500 rounded-md hover:bg-pink-600 text-violet-50"
             >
               Remove Item
@@ -37,7 +39,7 @@
 
 <script setup>
 import { defineProps } from 'vue'
-import { currencyFormat } from '../helpers/useAuth'
+import { currencyFormat, deleteCartItem } from '../helpers/useAuth'
 
 const props = defineProps({
   cartItem: {
