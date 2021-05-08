@@ -1,4 +1,4 @@
-//Vanessa Gutierrez 05/06/2021
+//Vanessa Gutierrez 05/08/2021
 import { ref, onUnmounted } from 'vue'
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -73,6 +73,17 @@ export const getItems = () => {
 
 export const deleteCartItem = cartItem => {
   db.collection('cart').doc(cartItem.id).delete()
+}
+
+export const deleteAllCartItems = () => {
+  const cartCollection = db.collection('cart')
+
+  const cartQuery = cartCollection.where('userId', '==', user.value.uid)
+  cartQuery.get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      doc.ref.delete()
+    })
+  })
 }
 
 export const addSubtotal = cartItems => {

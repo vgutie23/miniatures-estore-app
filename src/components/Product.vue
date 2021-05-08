@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/29/2021-->
+<!--Vanessa Gutierrez 05/08/2021-->
 <template>
   <div>
     <p class="text-center text-xs text-violet-50 mb-3">
@@ -20,7 +20,7 @@
     <div v-else>
       <button
         @click="addToCart(product)"
-        class="bg-fuchsia-800 px-7 focus:outline-none hover:bg-fuchsia-900 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
+        class="bg-fuchsia-800 px-7 focus:outline-none hover:bg-indigo-600 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
       >
         Add to Cart
       </button>
