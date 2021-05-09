@@ -31,10 +31,10 @@
           to find for sale online. I usually update my website to include
           completely new products every 2 weeks, or sooner if an item sells out!
           I hope you all enjoy shopping here. If you have any questions or
-          concerns, please email me at marvelousminis@example.com. Your
-          happiness is my top priority! With that being said, thank you for
-          choosing to support my business, I am thrilled to see you here and
-          looking forward to keeping you as a happy customer!
+          concerns, please email me at marvminis@example.com. Your happiness is
+          my top priority! With that being said, thank you for choosing to
+          support my business, I am thrilled to see you here and looking forward
+          to keeping you as a happy customer!
         </p>
         <router-link to="/miniitems">
           <button
