@@ -38,7 +38,7 @@
         </p>
         <router-link to="/miniitems">
           <button
-            class="btn bg-fuchsia-800 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4 lg:mr-28"
+            class="btn bg-fuchsia-800 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4 lg:mr-28 mb-28"
           >
             View Products
           </button>
