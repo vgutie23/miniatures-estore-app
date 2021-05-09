@@ -30,8 +30,9 @@
           accessible and affordable by all! I try to sell items that are tough
           to find for sale online. I usually update my website to include
           completely new products every 2 weeks, or sooner if an item sells out!
-          I hope you all enjoy shopping here. Please let me know any concerns.
-          Your happiness is my top priority! With that being said, thank you for
+          I hope you all enjoy shopping here. If you have any questions or
+          concerns, please email me at marvelousminis@example.com. Your
+          happiness is my top priority! With that being said, thank you for
           choosing to support my business, I am thrilled to see you here and
           looking forward to keeping you as a happy customer!
         </p>

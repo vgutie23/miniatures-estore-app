@@ -31,7 +31,7 @@
     </div>
     <div>
       ** Disclaimer: This website is not a real e-commerce site as this is not a
-      real business. The description is purely fictional. **
+      real business. Everything in the description is purely fictional. **
     </div>
   </div>
 </template>

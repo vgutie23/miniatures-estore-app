@@ -25,13 +25,19 @@
         Add to Cart
       </button>
     </div>
+    <div
+      v-if="copied"
+      class="bg-pink-600 text-violet-50 fixed py-3 px-6 rounded-full bottom-6 right-5 z-10"
+    >
+      <p>Added to Cart!</p>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, defineEmit, ref } from 'vue'
+import { useClipboard } from '@vueuse/core'
 import { isAuthenticated, database, user } from '../helpers/useAuth'
-import { defineEmit } from 'vue'
 import { currencyFormat } from '../helpers/useAuth'
 
 const props = defineProps({
@@ -49,8 +55,13 @@ const props = defineProps({
 const { products, cart } = database()
 const emit = defineEmit(['added'])
 
+const source = ref('')
+const { copy, copied } = useClipboard({ source })
+
 const addToCart = product => {
   cart(product, user)
   emit('added')
+  source.value = `${props.product.name}`
+  copy()
 }
 </script>
