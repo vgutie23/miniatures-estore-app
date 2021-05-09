@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/23/2021-->
+<!--Vanessa Gutierrez 05/09/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -10,7 +10,7 @@
       class="container text-center mx-auto rounded-lg bg-indigo-900 bg-opacity-95 text-white mt-9 mb-9 max-w-lg p-20"
     >
       <div
-        class="bg-clip-text bg-gradient-to-r from-pink-400 to-violet-200 font-extrabold tracking-wider text-xl text-center text-transparent mt-9 mb-9"
+        class="font-extrabold tracking-wider text-xl text-center text-pink-300 mt-9 mb-9"
       >
         <p>Name: {{ user?.displayName }}</p>
         <p>Email Address: {{ user?.email }}</p>

@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 05/08/2021-->
+<!--Vanessa Gutierrez 05/09/2021-->
 <template>
   <div
     class="fixed left-0 right-0 bottom-0 bg-indigo-900 bg-opacity-95 text-xs text-center font-serif pb-2 pt-2 text-violet-50"
@@ -26,7 +26,7 @@
         class="hover:underline hover:text-pink-600"
         title="Freepik"
       >
-        KamranAydinov - www.freepik.com</a
+        KamranAydinov - www.freepik.com.</a
       >
     </div>
     <div>

@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 05/08/2021-->
+<!--Vanessa Gutierrez 05/09/2021-->
 <template>
   <div>
     <div
@@ -52,7 +52,7 @@
         class="container text-center mx-auto rounded-lg text-white mt-9 mb-9 max-w-lg p-16"
       >
         <div
-          class="bg-clip-text bg-gradient-to-r from-pink-300 to-violet-200 font-extrabold tracking-wider text-xl text-center text-transparent mt-1 mb-1"
+          class="font-extrabold tracking-wider text-xl text-center text-pink-300 mt-1 mb-1"
         >
           <p>No Items in Cart</p>
         </div>
