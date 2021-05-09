@@ -1,4 +1,4 @@
-<!--Vanessa Gutierrez 04/23/2021-->
+<!--Vanessa Gutierrez 05/08/2021-->
 <template>
   <div class="mt-12">
     <h1
@@ -20,16 +20,24 @@
           height="250"
         />
       </div>
-      <div class="float-right w-1/2 mt-10 sm:break-normal ml-auto mr-auto">
-        <p class="font-serif text-fuchsia-900">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-          ducimus eaque eligendi eum dolore cum unde blanditiis nisi voluptatum
-          facilis expedita, quia consectetur, dignissimos nemo magnam et quaerat
-          natus accusamus.
+      <div class="float-right w-1/2 mt-0 sm:break-normal ml-auto mr-auto">
+        <p
+          class="font-serif text-fuchsia-900 bg-pink-400 bg-opacity-30 rounded-md lg:bg-transparent lg:mt-6 lg:mr-28"
+        >
+          Marvelous Minis is a place for all! I am the sole owner of this
+          business. I started this business with a love of miniature items! My
+          goal when I started this business was to sell products that are
+          accessible and affordable by all! I try to sell items that are tough
+          to find for sale online. I usually update my website to include
+          completely new products every 2 weeks, or sooner if an item sells out!
+          I hope you all enjoy shopping here. Please let me know any concerns.
+          Your happiness is my top priority! With that being said, thank you for
+          choosing to support my business, I am thrilled to see you here and
+          looking forward to keeping you as a happy customer!
         </p>
         <router-link to="/miniitems">
           <button
-            class="btn bg-fuchsia-800 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4"
+            class="btn bg-fuchsia-800 bg-opacity-90 hover:bg-pink-600 border-none btn-sm rounded-btn mt-4 lg:mr-28"
           >
             View Products
           </button>
@@ -37,7 +45,7 @@
       </div>
     </div>
   </div>
-  <Footer />
+  <HomeFooter />
 </template>
 
 <script setup>

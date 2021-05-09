@@ -12,7 +12,7 @@
     </p>
     <router-link to="/login" v-if="!isAuthenticated">
       <button
-        class="bg-pink-600 px-7 focus:outline-none hover:bg-pink-700 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
+        class="bg-pink-600 px-7 focus:outline-none hover:bg-pink-800 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
       >
         Sign in to Add to Cart
       </button>
@@ -20,7 +20,7 @@
     <div v-else>
       <button
         @click="addToCart(product)"
-        class="bg-fuchsia-800 px-7 focus:outline-none hover:bg-indigo-600 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
+        class="bg-fuchsia-800 px-7 focus:outline-none hover:bg-pink-600 rounded-md text-center mt-2 ml-auto mr-auto flex text-violet-50 text-xs"
       >
         Add to Cart
       </button>

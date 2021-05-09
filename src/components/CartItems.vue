@@ -49,14 +49,16 @@
       </div>
       <div
         v-else
-        class="container text-center mx-auto rounded-lg text-white mt-9 mb-9 max-w-lg p-20"
+        class="container text-center mx-auto rounded-lg text-white mt-9 mb-9 max-w-lg p-16"
       >
-        <h3 class="text-2xl font-semibold tracking-wide text-violet-50">
-          No Items in Cart
-        </h3>
+        <div
+          class="bg-clip-text bg-gradient-to-r from-pink-300 to-violet-200 font-extrabold tracking-wider text-xl text-center text-transparent mt-1 mb-1"
+        >
+          <p>No Items in Cart</p>
+        </div>
         <router-link to="/miniitems">
           <button
-            class="btn-sm px-2 p-1 border-none rounded-lg bg-fuchsia-800 hover:bg-fuchsia-900 text-violet-50 text-sm mt-3"
+            class="btn-sm px-2 p-1 border-none rounded-lg bg-fuchsia-800 hover:bg-pink-600 text-violet-100 text-xs"
           >
             Start Shopping
           </button>
